@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS actividad_2_web;
+
+USE actividad_2_web;
+
+CREATE TABLE IF NOT EXISTS registros (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL UNIQUE,
+    age INT NOT NULL,
+    country VARCHAR(100) NOT NULL
+);
+
